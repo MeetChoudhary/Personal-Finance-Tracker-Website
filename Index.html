@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Personal Finance Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="#tracker">Tracker</a></li>
+                <li><a href="#report">Report</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tracker">
+            <h2>Track Your Finances</h2>
+            <form id="finance-form">
+                <label for="type">Transaction Type:</label>
+                <select id="type" required>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+
+                <label for="mode">Transaction Mode:</label>
+                <select id="mode" required>
+                    <option value="cash">Cash</option>
+                    <option value="online">Online</option>
+                </select>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+
+                <label for="description">Description:</label>
+                <input type="text" id="description" required>
+
+                <button type="submit">Add Transaction</button>
+            </form>
+        </section>
+
+        <section id="report">
+            <h2>Financial Report</h2>
+            <canvas id="financeChart" width="400" height="200"></canvas>
+            <div id="percentage-display"></div> <!-- Percentage Display -->
+            <div id="total-left-display"></div> <!-- Total Money Left Display -->
+        </section>
+
+        <section id="history">
+            <h2>Transaction History</h2>
+            <ul id="transaction-history"></ul> <!-- Transaction History Display -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Personal Finance Tracker. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
