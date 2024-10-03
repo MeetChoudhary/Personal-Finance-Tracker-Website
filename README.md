@@ -16,3 +16,5 @@ A comprehensive tool for tracking income and expenses. Users can categorize thei
 ### Snapshots of the project
 ![Website 01](https://github.com/user-attachments/assets/5c216f88-9a27-454b-a536-f693f06c2f9f)
 ![Website 02](https://github.com/user-attachments/assets/84987943-6021-432f-b10d-6e1e2380a47d)
+![Website 03](https://github.com/user-attachments/assets/ed585a0d-2dbf-4d49-9f5f-8c7c33e2c541)
+
